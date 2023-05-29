@@ -1,0 +1,19 @@
+.log{
+	float: left;
+	margin-left: 3px;
+	margin-top: 3%;
+}
+
+.logo{
+	margin-left: 3px;
+	margin-top: 1%;
+}
+
+nav{
+	clear: both;
+}
+
+body{
+	color: #003300;
+	background-color: whitesmoke;
+}
