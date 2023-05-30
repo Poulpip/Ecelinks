@@ -51,7 +51,7 @@
             }
             else{
                 echo "Veuillez remplir tous les champs.";
-                $lien = "signin.html";
+                $lien = "index.html";
                 echo "<a href=\"$lien\">Lien vers le formulaire</a>";
             }
                     
