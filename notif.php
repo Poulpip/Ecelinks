@@ -72,11 +72,8 @@
 	?>
 	
 	<section>
-		<p>Messagerie <br>
+		<p>Notifications
 		</p> 
-		<form action="messagerie.php" method="POST">
-        <button>Chatter avec mon 1er ami</button>
-      </form>
 		<p class="contact">Linkece <br>
 			 67 avenue Marceau<br>
 			 75015 Paris<br> <br>

@@ -17,3 +17,12 @@ body{
 	color: #003300;
 	background-color: whitesmoke;
 }
+
+.log:hover img{
+	opacity: 50%;
+}
+
+#emplois{
+	margin-right: 100px;
+}
+

@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="projet.css">
 	<?php
     $database = "reseau_social";
-    $db_handle = mysqli_connect('localhost', 'root', '', $database);
-    $db_found = mysqli_select_db($db_handle, $database);
+	$database = "id20830431_reseau_social";
+    $db_handle = mysqli_connect('localhost', 'id20830431_ecelinks', 'Ecelink1!', $database);
     $id = isset($_GET['id']) ? $_GET['id'] : '';
 	$pseudo = isset($_GET['pseudo']) ? $_GET['pseudo'] : '';
 	$accueil = "accueil.php?id=" . urlencode($id) . "&pseudo=" . urlencode($pseudo);
@@ -58,25 +58,21 @@
 	</div>
 
 	<nav >
-	<a href="accueil.html">Accueil</a>
+	<a href="index.html">Accueil</a>
 	 <a href="monreseau.html">Mon reseau</a>
 	 <a href="vous.html">Vous</a>
 	 <a href="notif.html">Notifications</a>
 	 <a href="messagerie.html">Messagerie</a>
 	 <a href="emplois.html">Emplois</a>
 	</nav>
-
 	<?php
 		echo "ID: " . $id . "<br>";
 		echo "Pseudo: " . $pseudo;
 	?>
-	
 	<section>
-		<p>Messagerie <br>
+		<p>Emplois 
 		</p> 
-		<form action="messagerie.php" method="POST">
-        <button>Chatter avec mon 1er ami</button>
-      </form>
+
 		<p class="contact">Linkece <br>
 			 67 avenue Marceau<br>
 			 75015 Paris<br> <br>
