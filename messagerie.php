@@ -16,20 +16,23 @@
         $db_found = mysqli_select_db($db_handle, $database);
         $sql="SELECT * FROM utilisateurs ";
         $result = mysqli_query($db_handle, $sql);
+        echo "<tr>";
         echo "<th>" . "id" . "</th>";
         echo "<th>" . "pseudo" . "</th>";
         echo "<th>" . "email" . "</th>";
         echo "<th>" . "mot_de_passe" . "</th>";
         echo "<th>" . "nom_complet" . "</th>";
-        
+        echo "</tr>";
 
         while ($data = mysqli_fetch_assoc($result)) {
         echo "<p>Requête: " . $sql . "<br>";
+        echo "<tr>";
         echo "<td>" . $data['id'] . "</td>";
         echo "<td>" . $data['pseudo'] . "</td>";
         echo "<td>" . $data['email'] . "</td>";
         echo "<td>" . $data['mot_de_passe'] . "</td>";
         echo "<td>" . $data['nom_complet'] . "</td>";
+        echo "</tr>";
     }
         
         $db_handle->close();
