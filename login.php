@@ -8,6 +8,7 @@
     <?php
     $database = "id20830431_reseau_social";
     $db_handle = mysqli_connect('localhost', 'id20830431_ecelinks', 'Ecelink1!', $database);
+    
     $mail = isset($_POST["mail"])? $_POST["mail"] : "";
     $mdp = isset($_POST["mdp"])? $_POST["mdp"] : "";
     if (empty($mail)) {
