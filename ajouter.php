@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="projet.css">
     <?php
-     $database = "id20830431_reseau_social";
-     $db_handle = mysqli_connect('localhost', 'id20830431_ecelinks', 'Ecelink1!', $database);
+    $database = "id20830431_reseau_social";
+    $db_handle = mysqli_connect('localhost', 'id20830431_ecelinks', 'Ecelink1!', $database);
     $db_found = mysqli_select_db($db_handle, $database);
     $id = isset($_GET['id']) ? $_GET['id'] : '';
     $pseudo = isset($_GET['pseudo']) ? $_GET['pseudo'] : '';
