@@ -42,7 +42,7 @@
                         }   
                     }
                         $url = "vous.php?id=" . urlencode($id) . "&pseudo=" . urlencode($pseudo);
-                        header("Location: " . $url);
+                        echo "<script>window.location.href = '" . $url . "';</script>";
                         exit;
                     } 
                 else {

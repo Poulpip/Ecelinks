@@ -56,7 +56,7 @@
                 }   
                 echo "</table>";
                 $redirectUrl = "vous.php?id=" . urlencode($id) . "&pseudo=" . urlencode($pseudo);
-                header("Location: " . $redirectUrl);
+                echo "<script>window.location.href = '" . $redirectUrl . "';</script>";
                 exit;
 
             }

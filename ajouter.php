@@ -24,7 +24,7 @@
 
         if (mysqli_query($db_handle, $sql)) {
              $url = "monreseau.php?id=" . urlencode($id) . "&pseudo=" . urlencode($pseudo);
-                    header("Location: " . $url);
+             echo "<script>window.location.href = '" . $url . "';</script>";
                     exit;   
         } 
         else {

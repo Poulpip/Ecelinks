@@ -15,7 +15,11 @@
 </head>
 <body>
     <?php
-        $sql = "DELETE FROM utilisateurs WHERE id = '$id'"; 
+    $sqlDeleteAmis = "DELETE FROM amis WHERE id_utilisateur_1 = '$id' OR id_utilisateur_2 = '$id'";
+    mysqli_query($db_handle, $sqlDeleteAmis);
+    
+    $sql = "DELETE FROM utilisateurs WHERE id = '$id'"; 
+    
     if ($db_handle->query($sql) === TRUE) {
         echo "Votre compte a été supprimé avec succès.";
         echo "<br>";
@@ -23,7 +27,7 @@
         echo "<a href=\"$lien\">SINGIN/LOGIN</a>";
 
     } else {
-        echo "Erreur lors de la suppression du compte : " . $db->error;
+        echo "Erreur lors de la suppression du compte : " . $dbhandle->error;
     }
     ?>
     
